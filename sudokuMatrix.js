@@ -1,7 +1,7 @@
 
 function sudokuSolver(sudokumatrix) {
-	let possibleNumbers = {},notThese = [], empty = 0, empties = 81, count = 0;
-	while (empties && count < 20) {
+	let possibleNumbers = {},notThese = [], empties = 81;;
+	while (empties) {
 		empties = 0;
 		for (var vert = 0; vert < sudokumatrix.length; vert++) {
 			for (var hor = 0; hor < sudokumatrix.length; hor++) {
@@ -35,7 +35,6 @@ function sudokuSolver(sudokumatrix) {
 				}
 			}
 		}
-		count++;
 	}
 	return sudokumatrix;
 }
