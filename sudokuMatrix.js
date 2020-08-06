@@ -1,6 +1,6 @@
 
 function sudokuSolver(sudokumatrix) {
-	let possibleNumbers = {},notThese = [], empties = 81;;
+	let possibleNumbers = {},notThese = [], empties = 1;
 	while (empties) {
 		empties = 0;
 		for (var vert = 0; vert < sudokumatrix.length; vert++) {
